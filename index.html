@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tulski</title>
+</head>
+<style>
+
+    /**
+ * 1. Set default font family to $initialize-font-family (default: sans-serif)
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom
+ * 3. Configurable defaults
+ */
+    html {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        /* 1 */
+        line-height: 1.4;
+        /* 3 */
+        font-size: 1em;
+        /* 3 */
+        -ms-text-size-adjust: 100%;
+        /* 2 */
+        -webkit-text-size-adjust: 100%;
+        /* 2 */
+    }
+
+    /*
+     * Remove default margin
+     */
+    body {
+        margin: 0;
+    }
+
+    /*
+     * Inheriting box-sizing
+     * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+     */
+    *, *:before, *:after {
+        -moz-box-sizing: inherit;
+        box-sizing: inherit;
+    }
+
+    body, html {
+        height: 100%;
+    }
+
+    #presentation {
+        height: 100%;
+        width: 100%;
+    }
+</style>
+<body>
+<embed id="presentation" src="./presentation.pdf" type="application/pdf"/>
+</body>
+</html>
